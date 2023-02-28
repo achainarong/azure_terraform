@@ -1,1 +1,1339 @@
-{"format_version":"1.1","terraform_version":"1.3.9","variables":{"cluster_name":{"value":"aks-demo-cluster"},"location":{"value":"Germany West Central"},"node_count":{"value":1},"node_vm_size":{"value":"STANDART_D2_V2"},"resource_group_name":{"value":"aks-demo-group"}},"planned_values":{"outputs":{"aks_fqdn":{"sensitive":false},"aks_id":{"sensitive":false},"aks_nodes_rg":{"sensitive":false}},"root_module":{"resources":[{"address":"azurerm_kubernetes_cluster.aks","mode":"managed","type":"azurerm_kubernetes_cluster","name":"aks","provider_name":"registry.terraform.io/hashicorp/azurerm","schema_version":2,"values":{"aci_connector_linux":[],"api_server_authorized_ip_ranges":null,"automatic_channel_upgrade":null,"azure_active_directory_role_based_access_control":[],"azure_policy_enabled":null,"default_node_pool":[{"enable_auto_scaling":false,"enable_host_encryption":null,"enable_node_public_ip":null,"fips_enabled":null,"kubelet_config":[],"linux_os_config":[],"max_count":null,"min_count":null,"name":"default","node_count":1,"node_public_ip_prefix_id":null,"node_taints":null,"only_critical_addons_enabled":null,"os_disk_type":"Managed","pod_subnet_id":null,"proximity_placement_group_id":null,"tags":null,"type":"VirtualMachineScaleSets","ultra_ssd_enabled":false,"upgrade_settings":[],"vm_size":"STANDART_D2_V2","vnet_subnet_id":null,"zones":null}],"disk_encryption_set_id":null,"dns_prefix":"aks-demo-cluster","dns_prefix_private_cluster":null,"enable_pod_security_policy":null,"http_application_routing_enabled":null,"http_proxy_config":[],"identity":[{"identity_ids":null,"type":"SystemAssigned"}],"ingress_application_gateway":[],"key_vault_secrets_provider":[],"linux_profile":[],"local_account_disabled":null,"location":"germanywestcentral","maintenance_window":[],"name":"aks-demo-cluster","oms_agent":[],"open_service_mesh_enabled":null,"private_cluster_enabled":null,"private_cluster_public_fqdn_enabled":false,"public_network_access_enabled":true,"resource_group_name":"aks-demo-group","role_based_access_control_enabled":true,"service_principal":[],"sku_tier":"Free","tags":null,"timeouts":null},"sensitive_values":{"aci_connector_linux":[],"auto_scaler_profile":[],"azure_active_directory_role_based_access_control":[],"default_node_pool":[{"kubelet_config":[],"linux_os_config":[],"node_labels":{},"upgrade_settings":[]}],"http_proxy_config":[],"identity":[{}],"ingress_application_gateway":[],"key_vault_secrets_provider":[],"kube_admin_config":[],"kube_config":[],"kubelet_identity":[],"linux_profile":[],"maintenance_window":[],"network_profile":[],"oms_agent":[],"service_principal":[],"windows_profile":[]}},{"address":"azurerm_resource_group.rg","mode":"managed","type":"azurerm_resource_group","name":"rg","provider_name":"registry.terraform.io/hashicorp/azurerm","schema_version":0,"values":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":{},"timeouts":null},"sensitive_values":{"tags":{}}}]}},"resource_drift":[{"address":"azurerm_resource_group.rg","mode":"managed","type":"azurerm_resource_group","name":"rg","provider_name":"registry.terraform.io/hashicorp/azurerm","change":{"actions":["update"],"before":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":null,"timeouts":null},"after":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":{},"timeouts":null},"after_unknown":{},"before_sensitive":{},"after_sensitive":{"tags":{}}}}],"resource_changes":[{"address":"azurerm_kubernetes_cluster.aks","mode":"managed","type":"azurerm_kubernetes_cluster","name":"aks","provider_name":"registry.terraform.io/hashicorp/azurerm","change":{"actions":["create"],"before":null,"after":{"aci_connector_linux":[],"api_server_authorized_ip_ranges":null,"automatic_channel_upgrade":null,"azure_active_directory_role_based_access_control":[],"azure_policy_enabled":null,"default_node_pool":[{"enable_auto_scaling":false,"enable_host_encryption":null,"enable_node_public_ip":null,"fips_enabled":null,"kubelet_config":[],"linux_os_config":[],"max_count":null,"min_count":null,"name":"default","node_count":1,"node_public_ip_prefix_id":null,"node_taints":null,"only_critical_addons_enabled":null,"os_disk_type":"Managed","pod_subnet_id":null,"proximity_placement_group_id":null,"tags":null,"type":"VirtualMachineScaleSets","ultra_ssd_enabled":false,"upgrade_settings":[],"vm_size":"STANDART_D2_V2","vnet_subnet_id":null,"zones":null}],"disk_encryption_set_id":null,"dns_prefix":"aks-demo-cluster","dns_prefix_private_cluster":null,"enable_pod_security_policy":null,"http_application_routing_enabled":null,"http_proxy_config":[],"identity":[{"identity_ids":null,"type":"SystemAssigned"}],"ingress_application_gateway":[],"key_vault_secrets_provider":[],"linux_profile":[],"local_account_disabled":null,"location":"germanywestcentral","maintenance_window":[],"name":"aks-demo-cluster","oms_agent":[],"open_service_mesh_enabled":null,"private_cluster_enabled":null,"private_cluster_public_fqdn_enabled":false,"public_network_access_enabled":true,"resource_group_name":"aks-demo-group","role_based_access_control_enabled":true,"service_principal":[],"sku_tier":"Free","tags":null,"timeouts":null},"after_unknown":{"aci_connector_linux":[],"auto_scaler_profile":true,"azure_active_directory_role_based_access_control":[],"default_node_pool":[{"kubelet_config":[],"kubelet_disk_type":true,"linux_os_config":[],"max_pods":true,"node_labels":true,"orchestrator_version":true,"os_disk_size_gb":true,"os_sku":true,"upgrade_settings":[]}],"fqdn":true,"http_application_routing_zone_name":true,"http_proxy_config":[],"id":true,"identity":[{"principal_id":true,"tenant_id":true}],"ingress_application_gateway":[],"key_vault_secrets_provider":[],"kube_admin_config":true,"kube_admin_config_raw":true,"kube_config":true,"kube_config_raw":true,"kubelet_identity":true,"kubernetes_version":true,"linux_profile":[],"maintenance_window":[],"network_profile":true,"node_resource_group":true,"oms_agent":[],"portal_fqdn":true,"private_dns_zone_id":true,"private_fqdn":true,"service_principal":[],"windows_profile":true},"before_sensitive":false,"after_sensitive":{"aci_connector_linux":[],"auto_scaler_profile":[],"azure_active_directory_role_based_access_control":[],"default_node_pool":[{"kubelet_config":[],"linux_os_config":[],"node_labels":{},"upgrade_settings":[]}],"http_proxy_config":[],"identity":[{}],"ingress_application_gateway":[],"key_vault_secrets_provider":[],"kube_admin_config":true,"kube_admin_config_raw":true,"kube_config":true,"kube_config_raw":true,"kubelet_identity":[],"linux_profile":[],"maintenance_window":[],"network_profile":[],"oms_agent":[],"service_principal":[],"windows_profile":[]}}},{"address":"azurerm_resource_group.rg","mode":"managed","type":"azurerm_resource_group","name":"rg","provider_name":"registry.terraform.io/hashicorp/azurerm","change":{"actions":["no-op"],"before":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":{},"timeouts":null},"after":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":{},"timeouts":null},"after_unknown":{},"before_sensitive":{"tags":{}},"after_sensitive":{"tags":{}}}}],"output_changes":{"aks_fqdn":{"actions":["create"],"before":null,"after_unknown":true,"before_sensitive":false,"after_sensitive":false},"aks_id":{"actions":["create"],"before":null,"after_unknown":true,"before_sensitive":false,"after_sensitive":false},"aks_nodes_rg":{"actions":["create"],"before":null,"after_unknown":true,"before_sensitive":false,"after_sensitive":false}},"prior_state":{"format_version":"1.0","terraform_version":"1.3.9","values":{"root_module":{"resources":[{"address":"azurerm_resource_group.rg","mode":"managed","type":"azurerm_resource_group","name":"rg","provider_name":"registry.terraform.io/hashicorp/azurerm","schema_version":0,"values":{"id":"/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group","location":"germanywestcentral","name":"aks-demo-group","tags":{},"timeouts":null},"sensitive_values":{"tags":{}}}]}}},"configuration":{"provider_config":{"azurerm":{"name":"azurerm","full_name":"registry.terraform.io/hashicorp/azurerm","version_constraint":"3.0.0","expressions":{"features":[{}]}}},"root_module":{"outputs":{"aks_fqdn":{"expression":{"references":["azurerm_kubernetes_cluster.aks.fqdn","azurerm_kubernetes_cluster.aks"]}},"aks_id":{"expression":{"references":["azurerm_kubernetes_cluster.aks.id","azurerm_kubernetes_cluster.aks"]}},"aks_nodes_rg":{"expression":{"references":["azurerm_kubernetes_cluster.aks.node_resource_group","azurerm_kubernetes_cluster.aks"]}}},"resources":[{"address":"azurerm_kubernetes_cluster.aks","mode":"managed","type":"azurerm_kubernetes_cluster","name":"aks","provider_config_key":"azurerm","expressions":{"default_node_pool":[{"enable_auto_scaling":{"constant_value":false},"name":{"constant_value":"default"},"node_count":{"references":["var.node_count"]},"type":{"constant_value":"VirtualMachineScaleSets"},"vm_size":{"references":["var.node_vm_size"]}}],"dns_prefix":{"references":["var.cluster_name"]},"identity":[{"type":{"constant_value":"SystemAssigned"}}],"location":{"references":["var.location"]},"name":{"references":["var.cluster_name"]},"resource_group_name":{"references":["azurerm_resource_group.rg.name","azurerm_resource_group.rg"]}},"schema_version":2},{"address":"azurerm_resource_group.rg","mode":"managed","type":"azurerm_resource_group","name":"rg","provider_config_key":"azurerm","expressions":{"location":{"references":["var.location"]},"name":{"references":["var.resource_group_name"]}},"schema_version":0}],"variables":{"cluster_name":{"description":"The name of the AKS cluster"},"location":{"description":"The location of the AKS cluster"},"node_count":{"description":"Select the number of nodes for the AKS cluster"},"node_vm_size":{"description":"Select the VM size for the AKS nodes"},"resource_group_name":{"description":"The name of the resource group in which the AKS cluster exists"}}}},"relevant_attributes":[{"resource":"azurerm_kubernetes_cluster.aks","attribute":["node_resource_group"]},{"resource":"azurerm_kubernetes_cluster.aks","attribute":["fqdn"]},{"resource":"azurerm_resource_group.rg","attribute":["name"]},{"resource":"azurerm_kubernetes_cluster.aks","attribute":["id"]}]}
+{
+  "format_version": "1.1",
+  "terraform_version": "1.3.9",
+  "variables": {
+    "cluster_name": { "value": "aks-demo-cluster" },
+    "location": { "value": "West Europe" },
+    "node_count": { "value": 1 },
+    "node_vm_size": { "value": "Standard_DS2_v2" },
+    "resource_group_name": { "value": "aks-demo-group" }
+  },
+  "planned_values": {
+    "outputs": {
+      "aks_fqdn": {
+        "sensitive": false,
+        "type": "string",
+        "value": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io"
+      },
+      "aks_id": {
+        "sensitive": false,
+        "type": "string",
+        "value": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster"
+      },
+      "aks_nodes_rg": {
+        "sensitive": false,
+        "type": "string",
+        "value": "MC_aks-demo-group_aks-demo-cluster_westeurope"
+      }
+    },
+    "root_module": {
+      "resources": [
+        {
+          "address": "azurerm_kubernetes_cluster.aks",
+          "mode": "managed",
+          "type": "azurerm_kubernetes_cluster",
+          "name": "aks",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 2,
+          "values": {
+            "aci_connector_linux": [],
+            "api_server_authorized_ip_ranges": [],
+            "auto_scaler_profile": [],
+            "automatic_channel_upgrade": "",
+            "azure_active_directory_role_based_access_control": [],
+            "azure_policy_enabled": false,
+            "default_node_pool": [
+              {
+                "enable_auto_scaling": false,
+                "enable_host_encryption": false,
+                "enable_node_public_ip": false,
+                "fips_enabled": false,
+                "kubelet_config": [],
+                "kubelet_disk_type": "OS",
+                "linux_os_config": [],
+                "max_count": 0,
+                "max_pods": 110,
+                "min_count": 0,
+                "name": "default",
+                "node_count": 1,
+                "node_labels": {},
+                "node_public_ip_prefix_id": "",
+                "node_taints": [],
+                "only_critical_addons_enabled": false,
+                "orchestrator_version": "1.24.9",
+                "os_disk_size_gb": 128,
+                "os_disk_type": "Managed",
+                "os_sku": "Ubuntu",
+                "pod_subnet_id": "",
+                "proximity_placement_group_id": "",
+                "tags": {},
+                "type": "VirtualMachineScaleSets",
+                "ultra_ssd_enabled": false,
+                "upgrade_settings": [],
+                "vm_size": "Standard_DS2_v2",
+                "vnet_subnet_id": "",
+                "zones": []
+              }
+            ],
+            "disk_encryption_set_id": "",
+            "dns_prefix": "aks-demo-cluster",
+            "dns_prefix_private_cluster": "",
+            "enable_pod_security_policy": false,
+            "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+            "http_application_routing_enabled": false,
+            "http_application_routing_zone_name": "",
+            "http_proxy_config": [],
+            "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+            "identity": [
+              {
+                "identity_ids": [],
+                "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+                "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+                "type": "SystemAssigned"
+              }
+            ],
+            "ingress_application_gateway": [],
+            "key_vault_secrets_provider": [],
+            "kube_admin_config": [],
+            "kube_admin_config_raw": "",
+            "kube_config": [
+              {
+                "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+                "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+                "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+                "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+              }
+            ],
+            "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+            "kubelet_identity": [
+              {
+                "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+                "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+                "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+              }
+            ],
+            "kubernetes_version": "1.24.9",
+            "linux_profile": [],
+            "local_account_disabled": false,
+            "location": "westeurope",
+            "maintenance_window": [],
+            "name": "aks-demo-cluster",
+            "network_profile": [
+              {
+                "dns_service_ip": "10.0.0.10",
+                "docker_bridge_cidr": "172.17.0.1/16",
+                "load_balancer_profile": [
+                  {
+                    "effective_outbound_ips": [
+                      "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                    ],
+                    "idle_timeout_in_minutes": 0,
+                    "managed_outbound_ip_count": 1,
+                    "outbound_ip_address_ids": [],
+                    "outbound_ip_prefix_ids": [],
+                    "outbound_ports_allocated": 0
+                  }
+                ],
+                "load_balancer_sku": "standard",
+                "nat_gateway_profile": [],
+                "network_mode": "",
+                "network_plugin": "kubenet",
+                "network_policy": "",
+                "outbound_type": "loadBalancer",
+                "pod_cidr": "10.244.0.0/16",
+                "service_cidr": "10.0.0.0/16"
+              }
+            ],
+            "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+            "oms_agent": [],
+            "open_service_mesh_enabled": false,
+            "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+            "private_cluster_enabled": false,
+            "private_cluster_public_fqdn_enabled": false,
+            "private_dns_zone_id": "",
+            "private_fqdn": "",
+            "public_network_access_enabled": true,
+            "resource_group_name": "aks-demo-group",
+            "role_based_access_control_enabled": true,
+            "service_principal": [],
+            "sku_tier": "Free",
+            "tags": {},
+            "timeouts": null,
+            "windows_profile": []
+          },
+          "sensitive_values": {
+            "aci_connector_linux": [],
+            "api_server_authorized_ip_ranges": [],
+            "auto_scaler_profile": [],
+            "azure_active_directory_role_based_access_control": [],
+            "default_node_pool": [
+              {
+                "kubelet_config": [],
+                "linux_os_config": [],
+                "node_labels": {},
+                "node_taints": [],
+                "tags": {},
+                "upgrade_settings": [],
+                "zones": []
+              }
+            ],
+            "http_proxy_config": [],
+            "identity": [{ "identity_ids": [] }],
+            "ingress_application_gateway": [],
+            "key_vault_secrets_provider": [],
+            "kube_admin_config": [],
+            "kube_config": [{}],
+            "kubelet_identity": [{}],
+            "linux_profile": [],
+            "maintenance_window": [],
+            "network_profile": [
+              {
+                "load_balancer_profile": [
+                  {
+                    "effective_outbound_ips": [false],
+                    "outbound_ip_address_ids": [],
+                    "outbound_ip_prefix_ids": []
+                  }
+                ],
+                "nat_gateway_profile": []
+              }
+            ],
+            "oms_agent": [],
+            "service_principal": [],
+            "tags": {},
+            "windows_profile": []
+          }
+        },
+        {
+          "address": "azurerm_resource_group.rg",
+          "mode": "managed",
+          "type": "azurerm_resource_group",
+          "name": "rg",
+          "provider_name": "registry.terraform.io/hashicorp/azurerm",
+          "schema_version": 0,
+          "values": {
+            "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+            "location": "westeurope",
+            "name": "aks-demo-group",
+            "tags": {},
+            "timeouts": null
+          },
+          "sensitive_values": { "tags": {} }
+        }
+      ]
+    }
+  },
+  "resource_drift": [
+    {
+      "address": "azurerm_kubernetes_cluster.aks",
+      "mode": "managed",
+      "type": "azurerm_kubernetes_cluster",
+      "name": "aks",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": ["update"],
+        "before": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": null,
+          "auto_scaler_profile": [],
+          "automatic_channel_upgrade": "",
+          "azure_active_directory_role_based_access_control": [],
+          "azure_policy_enabled": false,
+          "default_node_pool": [
+            {
+              "enable_auto_scaling": false,
+              "enable_host_encryption": false,
+              "enable_node_public_ip": false,
+              "fips_enabled": false,
+              "kubelet_config": [],
+              "kubelet_disk_type": "OS",
+              "linux_os_config": [],
+              "max_count": 0,
+              "max_pods": 110,
+              "min_count": 0,
+              "name": "default",
+              "node_count": 1,
+              "node_labels": {},
+              "node_public_ip_prefix_id": "",
+              "node_taints": null,
+              "only_critical_addons_enabled": false,
+              "orchestrator_version": "1.24.9",
+              "os_disk_size_gb": 128,
+              "os_disk_type": "Managed",
+              "os_sku": "Ubuntu",
+              "pod_subnet_id": "",
+              "proximity_placement_group_id": "",
+              "tags": null,
+              "type": "VirtualMachineScaleSets",
+              "ultra_ssd_enabled": false,
+              "upgrade_settings": [],
+              "vm_size": "Standard_DS2_v2",
+              "vnet_subnet_id": "",
+              "zones": null
+            }
+          ],
+          "disk_encryption_set_id": "",
+          "dns_prefix": "aks-demo-cluster",
+          "dns_prefix_private_cluster": "",
+          "enable_pod_security_policy": false,
+          "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+          "http_application_routing_enabled": false,
+          "http_application_routing_zone_name": "",
+          "http_proxy_config": [],
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+          "identity": [
+            {
+              "identity_ids": null,
+              "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+              "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+              "type": "SystemAssigned"
+            }
+          ],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": [],
+          "kube_admin_config_raw": "",
+          "kube_config": [
+            {
+              "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+              "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+              "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+              "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+            }
+          ],
+          "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+          "kubelet_identity": [
+            {
+              "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+              "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+              "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+            }
+          ],
+          "kubernetes_version": "1.24.9",
+          "linux_profile": [],
+          "local_account_disabled": false,
+          "location": "westeurope",
+          "maintenance_window": [],
+          "name": "aks-demo-cluster",
+          "network_profile": [
+            {
+              "dns_service_ip": "10.0.0.10",
+              "docker_bridge_cidr": "172.17.0.1/16",
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [
+                    "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                  ],
+                  "idle_timeout_in_minutes": 0,
+                  "managed_outbound_ip_count": 1,
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": [],
+                  "outbound_ports_allocated": 0
+                }
+              ],
+              "load_balancer_sku": "standard",
+              "nat_gateway_profile": [],
+              "network_mode": "",
+              "network_plugin": "kubenet",
+              "network_policy": "",
+              "outbound_type": "loadBalancer",
+              "pod_cidr": "10.244.0.0/16",
+              "service_cidr": "10.0.0.0/16"
+            }
+          ],
+          "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+          "oms_agent": [],
+          "open_service_mesh_enabled": false,
+          "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+          "private_cluster_enabled": false,
+          "private_cluster_public_fqdn_enabled": false,
+          "private_dns_zone_id": "",
+          "private_fqdn": "",
+          "public_network_access_enabled": true,
+          "resource_group_name": "aks-demo-group",
+          "role_based_access_control_enabled": true,
+          "service_principal": [],
+          "sku_tier": "Free",
+          "tags": null,
+          "timeouts": null,
+          "windows_profile": []
+        },
+        "after": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "automatic_channel_upgrade": "",
+          "azure_active_directory_role_based_access_control": [],
+          "azure_policy_enabled": false,
+          "default_node_pool": [
+            {
+              "enable_auto_scaling": false,
+              "enable_host_encryption": false,
+              "enable_node_public_ip": false,
+              "fips_enabled": false,
+              "kubelet_config": [],
+              "kubelet_disk_type": "OS",
+              "linux_os_config": [],
+              "max_count": 0,
+              "max_pods": 110,
+              "min_count": 0,
+              "name": "default",
+              "node_count": 1,
+              "node_labels": {},
+              "node_public_ip_prefix_id": "",
+              "node_taints": [],
+              "only_critical_addons_enabled": false,
+              "orchestrator_version": "1.24.9",
+              "os_disk_size_gb": 128,
+              "os_disk_type": "Managed",
+              "os_sku": "Ubuntu",
+              "pod_subnet_id": "",
+              "proximity_placement_group_id": "",
+              "tags": {},
+              "type": "VirtualMachineScaleSets",
+              "ultra_ssd_enabled": false,
+              "upgrade_settings": [],
+              "vm_size": "Standard_DS2_v2",
+              "vnet_subnet_id": "",
+              "zones": []
+            }
+          ],
+          "disk_encryption_set_id": "",
+          "dns_prefix": "aks-demo-cluster",
+          "dns_prefix_private_cluster": "",
+          "enable_pod_security_policy": false,
+          "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+          "http_application_routing_enabled": false,
+          "http_application_routing_zone_name": "",
+          "http_proxy_config": [],
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+          "identity": [
+            {
+              "identity_ids": [],
+              "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+              "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+              "type": "SystemAssigned"
+            }
+          ],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": [],
+          "kube_admin_config_raw": "",
+          "kube_config": [
+            {
+              "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+              "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+              "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+              "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+            }
+          ],
+          "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+          "kubelet_identity": [
+            {
+              "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+              "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+              "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+            }
+          ],
+          "kubernetes_version": "1.24.9",
+          "linux_profile": [],
+          "local_account_disabled": false,
+          "location": "westeurope",
+          "maintenance_window": [],
+          "name": "aks-demo-cluster",
+          "network_profile": [
+            {
+              "dns_service_ip": "10.0.0.10",
+              "docker_bridge_cidr": "172.17.0.1/16",
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [
+                    "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                  ],
+                  "idle_timeout_in_minutes": 0,
+                  "managed_outbound_ip_count": 1,
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": [],
+                  "outbound_ports_allocated": 0
+                }
+              ],
+              "load_balancer_sku": "standard",
+              "nat_gateway_profile": [],
+              "network_mode": "",
+              "network_plugin": "kubenet",
+              "network_policy": "",
+              "outbound_type": "loadBalancer",
+              "pod_cidr": "10.244.0.0/16",
+              "service_cidr": "10.0.0.0/16"
+            }
+          ],
+          "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+          "oms_agent": [],
+          "open_service_mesh_enabled": false,
+          "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+          "private_cluster_enabled": false,
+          "private_cluster_public_fqdn_enabled": false,
+          "private_dns_zone_id": "",
+          "private_fqdn": "",
+          "public_network_access_enabled": true,
+          "resource_group_name": "aks-demo-group",
+          "role_based_access_control_enabled": true,
+          "service_principal": [],
+          "sku_tier": "Free",
+          "tags": {},
+          "timeouts": null,
+          "windows_profile": []
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "aci_connector_linux": [],
+          "auto_scaler_profile": [],
+          "azure_active_directory_role_based_access_control": [],
+          "default_node_pool": [
+            {
+              "kubelet_config": [],
+              "linux_os_config": [],
+              "node_labels": {},
+              "upgrade_settings": []
+            }
+          ],
+          "http_proxy_config": [],
+          "identity": [{}],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": true,
+          "kube_admin_config_raw": true,
+          "kube_config": true,
+          "kube_config_raw": true,
+          "kubelet_identity": [{}],
+          "linux_profile": [],
+          "maintenance_window": [],
+          "network_profile": [
+            {
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [false],
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": []
+                }
+              ],
+              "nat_gateway_profile": []
+            }
+          ],
+          "oms_agent": [],
+          "service_principal": [],
+          "windows_profile": []
+        },
+        "after_sensitive": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "azure_active_directory_role_based_access_control": [],
+          "default_node_pool": [
+            {
+              "kubelet_config": [],
+              "linux_os_config": [],
+              "node_labels": {},
+              "node_taints": [],
+              "tags": {},
+              "upgrade_settings": [],
+              "zones": []
+            }
+          ],
+          "http_proxy_config": [],
+          "identity": [{ "identity_ids": [] }],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": true,
+          "kube_admin_config_raw": true,
+          "kube_config": true,
+          "kube_config_raw": true,
+          "kubelet_identity": [{}],
+          "linux_profile": [],
+          "maintenance_window": [],
+          "network_profile": [
+            {
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [false],
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": []
+                }
+              ],
+              "nat_gateway_profile": []
+            }
+          ],
+          "oms_agent": [],
+          "service_principal": [],
+          "tags": {},
+          "windows_profile": []
+        }
+      }
+    },
+    {
+      "address": "azurerm_resource_group.rg",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": ["update"],
+        "before": {
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+          "location": "westeurope",
+          "name": "aks-demo-group",
+          "tags": null,
+          "timeouts": null
+        },
+        "after": {
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+          "location": "westeurope",
+          "name": "aks-demo-group",
+          "tags": {},
+          "timeouts": null
+        },
+        "after_unknown": {},
+        "before_sensitive": {},
+        "after_sensitive": { "tags": {} }
+      }
+    }
+  ],
+  "resource_changes": [
+    {
+      "address": "azurerm_kubernetes_cluster.aks",
+      "mode": "managed",
+      "type": "azurerm_kubernetes_cluster",
+      "name": "aks",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": ["no-op"],
+        "before": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "automatic_channel_upgrade": "",
+          "azure_active_directory_role_based_access_control": [],
+          "azure_policy_enabled": false,
+          "default_node_pool": [
+            {
+              "enable_auto_scaling": false,
+              "enable_host_encryption": false,
+              "enable_node_public_ip": false,
+              "fips_enabled": false,
+              "kubelet_config": [],
+              "kubelet_disk_type": "OS",
+              "linux_os_config": [],
+              "max_count": 0,
+              "max_pods": 110,
+              "min_count": 0,
+              "name": "default",
+              "node_count": 1,
+              "node_labels": {},
+              "node_public_ip_prefix_id": "",
+              "node_taints": [],
+              "only_critical_addons_enabled": false,
+              "orchestrator_version": "1.24.9",
+              "os_disk_size_gb": 128,
+              "os_disk_type": "Managed",
+              "os_sku": "Ubuntu",
+              "pod_subnet_id": "",
+              "proximity_placement_group_id": "",
+              "tags": {},
+              "type": "VirtualMachineScaleSets",
+              "ultra_ssd_enabled": false,
+              "upgrade_settings": [],
+              "vm_size": "Standard_DS2_v2",
+              "vnet_subnet_id": "",
+              "zones": []
+            }
+          ],
+          "disk_encryption_set_id": "",
+          "dns_prefix": "aks-demo-cluster",
+          "dns_prefix_private_cluster": "",
+          "enable_pod_security_policy": false,
+          "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+          "http_application_routing_enabled": false,
+          "http_application_routing_zone_name": "",
+          "http_proxy_config": [],
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+          "identity": [
+            {
+              "identity_ids": [],
+              "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+              "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+              "type": "SystemAssigned"
+            }
+          ],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": [],
+          "kube_admin_config_raw": "",
+          "kube_config": [
+            {
+              "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+              "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+              "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+              "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+            }
+          ],
+          "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+          "kubelet_identity": [
+            {
+              "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+              "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+              "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+            }
+          ],
+          "kubernetes_version": "1.24.9",
+          "linux_profile": [],
+          "local_account_disabled": false,
+          "location": "westeurope",
+          "maintenance_window": [],
+          "name": "aks-demo-cluster",
+          "network_profile": [
+            {
+              "dns_service_ip": "10.0.0.10",
+              "docker_bridge_cidr": "172.17.0.1/16",
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [
+                    "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                  ],
+                  "idle_timeout_in_minutes": 0,
+                  "managed_outbound_ip_count": 1,
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": [],
+                  "outbound_ports_allocated": 0
+                }
+              ],
+              "load_balancer_sku": "standard",
+              "nat_gateway_profile": [],
+              "network_mode": "",
+              "network_plugin": "kubenet",
+              "network_policy": "",
+              "outbound_type": "loadBalancer",
+              "pod_cidr": "10.244.0.0/16",
+              "service_cidr": "10.0.0.0/16"
+            }
+          ],
+          "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+          "oms_agent": [],
+          "open_service_mesh_enabled": false,
+          "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+          "private_cluster_enabled": false,
+          "private_cluster_public_fqdn_enabled": false,
+          "private_dns_zone_id": "",
+          "private_fqdn": "",
+          "public_network_access_enabled": true,
+          "resource_group_name": "aks-demo-group",
+          "role_based_access_control_enabled": true,
+          "service_principal": [],
+          "sku_tier": "Free",
+          "tags": {},
+          "timeouts": null,
+          "windows_profile": []
+        },
+        "after": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "automatic_channel_upgrade": "",
+          "azure_active_directory_role_based_access_control": [],
+          "azure_policy_enabled": false,
+          "default_node_pool": [
+            {
+              "enable_auto_scaling": false,
+              "enable_host_encryption": false,
+              "enable_node_public_ip": false,
+              "fips_enabled": false,
+              "kubelet_config": [],
+              "kubelet_disk_type": "OS",
+              "linux_os_config": [],
+              "max_count": 0,
+              "max_pods": 110,
+              "min_count": 0,
+              "name": "default",
+              "node_count": 1,
+              "node_labels": {},
+              "node_public_ip_prefix_id": "",
+              "node_taints": [],
+              "only_critical_addons_enabled": false,
+              "orchestrator_version": "1.24.9",
+              "os_disk_size_gb": 128,
+              "os_disk_type": "Managed",
+              "os_sku": "Ubuntu",
+              "pod_subnet_id": "",
+              "proximity_placement_group_id": "",
+              "tags": {},
+              "type": "VirtualMachineScaleSets",
+              "ultra_ssd_enabled": false,
+              "upgrade_settings": [],
+              "vm_size": "Standard_DS2_v2",
+              "vnet_subnet_id": "",
+              "zones": []
+            }
+          ],
+          "disk_encryption_set_id": "",
+          "dns_prefix": "aks-demo-cluster",
+          "dns_prefix_private_cluster": "",
+          "enable_pod_security_policy": false,
+          "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+          "http_application_routing_enabled": false,
+          "http_application_routing_zone_name": "",
+          "http_proxy_config": [],
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+          "identity": [
+            {
+              "identity_ids": [],
+              "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+              "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+              "type": "SystemAssigned"
+            }
+          ],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": [],
+          "kube_admin_config_raw": "",
+          "kube_config": [
+            {
+              "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+              "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+              "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+              "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+              "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+            }
+          ],
+          "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+          "kubelet_identity": [
+            {
+              "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+              "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+              "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+            }
+          ],
+          "kubernetes_version": "1.24.9",
+          "linux_profile": [],
+          "local_account_disabled": false,
+          "location": "westeurope",
+          "maintenance_window": [],
+          "name": "aks-demo-cluster",
+          "network_profile": [
+            {
+              "dns_service_ip": "10.0.0.10",
+              "docker_bridge_cidr": "172.17.0.1/16",
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [
+                    "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                  ],
+                  "idle_timeout_in_minutes": 0,
+                  "managed_outbound_ip_count": 1,
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": [],
+                  "outbound_ports_allocated": 0
+                }
+              ],
+              "load_balancer_sku": "standard",
+              "nat_gateway_profile": [],
+              "network_mode": "",
+              "network_plugin": "kubenet",
+              "network_policy": "",
+              "outbound_type": "loadBalancer",
+              "pod_cidr": "10.244.0.0/16",
+              "service_cidr": "10.0.0.0/16"
+            }
+          ],
+          "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+          "oms_agent": [],
+          "open_service_mesh_enabled": false,
+          "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+          "private_cluster_enabled": false,
+          "private_cluster_public_fqdn_enabled": false,
+          "private_dns_zone_id": "",
+          "private_fqdn": "",
+          "public_network_access_enabled": true,
+          "resource_group_name": "aks-demo-group",
+          "role_based_access_control_enabled": true,
+          "service_principal": [],
+          "sku_tier": "Free",
+          "tags": {},
+          "timeouts": null,
+          "windows_profile": []
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "azure_active_directory_role_based_access_control": [],
+          "default_node_pool": [
+            {
+              "kubelet_config": [],
+              "linux_os_config": [],
+              "node_labels": {},
+              "node_taints": [],
+              "tags": {},
+              "upgrade_settings": [],
+              "zones": []
+            }
+          ],
+          "http_proxy_config": [],
+          "identity": [{ "identity_ids": [] }],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": true,
+          "kube_admin_config_raw": true,
+          "kube_config": true,
+          "kube_config_raw": true,
+          "kubelet_identity": [{}],
+          "linux_profile": [],
+          "maintenance_window": [],
+          "network_profile": [
+            {
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [false],
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": []
+                }
+              ],
+              "nat_gateway_profile": []
+            }
+          ],
+          "oms_agent": [],
+          "service_principal": [],
+          "tags": {},
+          "windows_profile": []
+        },
+        "after_sensitive": {
+          "aci_connector_linux": [],
+          "api_server_authorized_ip_ranges": [],
+          "auto_scaler_profile": [],
+          "azure_active_directory_role_based_access_control": [],
+          "default_node_pool": [
+            {
+              "kubelet_config": [],
+              "linux_os_config": [],
+              "node_labels": {},
+              "node_taints": [],
+              "tags": {},
+              "upgrade_settings": [],
+              "zones": []
+            }
+          ],
+          "http_proxy_config": [],
+          "identity": [{ "identity_ids": [] }],
+          "ingress_application_gateway": [],
+          "key_vault_secrets_provider": [],
+          "kube_admin_config": true,
+          "kube_admin_config_raw": true,
+          "kube_config": true,
+          "kube_config_raw": true,
+          "kubelet_identity": [{}],
+          "linux_profile": [],
+          "maintenance_window": [],
+          "network_profile": [
+            {
+              "load_balancer_profile": [
+                {
+                  "effective_outbound_ips": [false],
+                  "outbound_ip_address_ids": [],
+                  "outbound_ip_prefix_ids": []
+                }
+              ],
+              "nat_gateway_profile": []
+            }
+          ],
+          "oms_agent": [],
+          "service_principal": [],
+          "tags": {},
+          "windows_profile": []
+        }
+      }
+    },
+    {
+      "address": "azurerm_resource_group.rg",
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "rg",
+      "provider_name": "registry.terraform.io/hashicorp/azurerm",
+      "change": {
+        "actions": ["no-op"],
+        "before": {
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+          "location": "westeurope",
+          "name": "aks-demo-group",
+          "tags": {},
+          "timeouts": null
+        },
+        "after": {
+          "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+          "location": "westeurope",
+          "name": "aks-demo-group",
+          "tags": {},
+          "timeouts": null
+        },
+        "after_unknown": {},
+        "before_sensitive": { "tags": {} },
+        "after_sensitive": { "tags": {} }
+      }
+    }
+  ],
+  "output_changes": {
+    "aks_fqdn": {
+      "actions": ["no-op"],
+      "before": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+      "after": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+      "after_unknown": false,
+      "before_sensitive": false,
+      "after_sensitive": false
+    },
+    "aks_id": {
+      "actions": ["no-op"],
+      "before": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+      "after": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+      "after_unknown": false,
+      "before_sensitive": false,
+      "after_sensitive": false
+    },
+    "aks_nodes_rg": {
+      "actions": ["no-op"],
+      "before": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+      "after": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+      "after_unknown": false,
+      "before_sensitive": false,
+      "after_sensitive": false
+    }
+  },
+  "prior_state": {
+    "format_version": "1.0",
+    "terraform_version": "1.3.9",
+    "values": {
+      "outputs": {
+        "aks_fqdn": {
+          "sensitive": false,
+          "value": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+          "type": "string"
+        },
+        "aks_id": {
+          "sensitive": false,
+          "value": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+          "type": "string"
+        },
+        "aks_nodes_rg": {
+          "sensitive": false,
+          "value": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+          "type": "string"
+        }
+      },
+      "root_module": {
+        "resources": [
+          {
+            "address": "azurerm_kubernetes_cluster.aks",
+            "mode": "managed",
+            "type": "azurerm_kubernetes_cluster",
+            "name": "aks",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "schema_version": 2,
+            "values": {
+              "aci_connector_linux": [],
+              "api_server_authorized_ip_ranges": [],
+              "auto_scaler_profile": [],
+              "automatic_channel_upgrade": "",
+              "azure_active_directory_role_based_access_control": [],
+              "azure_policy_enabled": false,
+              "default_node_pool": [
+                {
+                  "enable_auto_scaling": false,
+                  "enable_host_encryption": false,
+                  "enable_node_public_ip": false,
+                  "fips_enabled": false,
+                  "kubelet_config": [],
+                  "kubelet_disk_type": "OS",
+                  "linux_os_config": [],
+                  "max_count": 0,
+                  "max_pods": 110,
+                  "min_count": 0,
+                  "name": "default",
+                  "node_count": 1,
+                  "node_labels": {},
+                  "node_public_ip_prefix_id": "",
+                  "node_taints": [],
+                  "only_critical_addons_enabled": false,
+                  "orchestrator_version": "1.24.9",
+                  "os_disk_size_gb": 128,
+                  "os_disk_type": "Managed",
+                  "os_sku": "Ubuntu",
+                  "pod_subnet_id": "",
+                  "proximity_placement_group_id": "",
+                  "tags": {},
+                  "type": "VirtualMachineScaleSets",
+                  "ultra_ssd_enabled": false,
+                  "upgrade_settings": [],
+                  "vm_size": "Standard_DS2_v2",
+                  "vnet_subnet_id": "",
+                  "zones": []
+                }
+              ],
+              "disk_encryption_set_id": "",
+              "dns_prefix": "aks-demo-cluster",
+              "dns_prefix_private_cluster": "",
+              "enable_pod_security_policy": false,
+              "fqdn": "aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io",
+              "http_application_routing_enabled": false,
+              "http_application_routing_zone_name": "",
+              "http_proxy_config": [],
+              "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group/providers/Microsoft.ContainerService/managedClusters/aks-demo-cluster",
+              "identity": [
+                {
+                  "identity_ids": [],
+                  "principal_id": "567e7a7a-a84f-405b-9021-f37378ef02d3",
+                  "tenant_id": "7c30a3f8-5026-4215-ab01-70abe9dd4fe8",
+                  "type": "SystemAssigned"
+                }
+              ],
+              "ingress_application_gateway": [],
+              "key_vault_secrets_provider": [],
+              "kube_admin_config": [],
+              "kube_admin_config_raw": "",
+              "kube_config": [
+                {
+                  "client_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                  "client_key": "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K",
+                  "cluster_ca_certificate": "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==",
+                  "host": "https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443",
+                  "password": "5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099",
+                  "username": "clusterUser_aks-demo-group_aks-demo-cluster"
+                }
+              ],
+              "kube_config_raw": "apiVersion: v1\nclusters:\n- cluster:\n    certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUU2VENDQXRHZ0F3SUJBZ0lSQUpRODB5SXJseFBoQWFub3NJNFpWV1V3RFFZSktvWklodmNOQVFFTEJRQXcKRFRFTE1Ba0dBMVVFQXhNQ1kyRXdJQmNOTWpNd01qSTNNVGt4T0RVeVdoZ1BNakExTXpBeU1qY3hPVEk0TlRKYQpNQTB4Q3pBSkJnTlZCQU1UQW1OaE1JSUNJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBZzhBTUlJQ0NnS0NBZ0VBCjNFSjZUYTF6Yzl1YlBlc0MxUFVMWStXYkc0OGN2S2h1d2VVdnRySlkyWWtZZlQ3ZFZqOXBqTTFhN1dEUnRKNDgKMUFyVmZwdG9KVFFxcUN1TFl0QW9FZFZna29Gbkh5aFVBeUVQL29pUm5zTXJUTjJxeW9XSzNZOXFqNmJnSXUrZApxbzRPS0dwRkZ5WDVHWWE0K3ZvY0l4TVMvWEw0Ri9qT0hvcTMwT2c2T01CUUtlTkZ0LzUwcHNKbW5sNmtYQlUrCkFWZ2w2TkFOWFZ5a3ZIUFo1ZTR1UFg0QUorSGpVazFrZSt3TWFjeEM1RUJkbFRVTFMveUYySXM2VEdoZC84MXgKTTR4Nm9wZlI4akM3L3lLOCtYVi9RRzVudGFtaDNxL2hFZjFYOGkyZ3E0ZnhuRE5Qcjc1cjQyT0dLL3h1NG1GSQpzME5tZ1V1b3MzM21aZ01oQXNBTEswajFpTUFOKzdXYWJMTmpuREpPR3U5U1hLbXNYNkwzdVR2c25hWnlReXNOCjdsT1hwdTVKVUJyK1IvdTdlOGFUOUtRZEVWd3ZreU1IQnNPV1lkRk15Z0FvU0VRT3lRcDhwT0ljeDRqSWwyUi8KVFl3WkgvUUdUT1FhSEF6dUxxZ3g3ZklERXF5MjZncXZlNHF3bEZHQkxtZk43RDRKaFl6N0FkZTkzeC9JU3hQSwp6MWlaWW5ZeDhha2FJT0pNT1NnaUtZaTN5NnEzMm1VQ2k3SWROS1hPdkxxdnNxaVFhU1IzKzdYbjZuQmkyRkVaCktraXFoekRjcVpNTXg2RXhxOGJXNllDMUhWTHBNUFJ0RXdCQzlpemRLcEJzWjdjVnFPT0hyQjVkN0Nlc2JQRmkKSTEyeEdBVEdCRnNyM1dXYkxVS1dlT3pkM0xSZm9EZjJjSVVSMC82WGtac0NBd0VBQWFOQ01FQXdEZ1lEVlIwUApBUUgvQkFRREFnS2tNQThHQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGTGVkbUxzWWdFU0pVL0daCnlmL1NlVXBGY2hva01BMEdDU3FHU0liM0RRRUJDd1VBQTRJQ0FRQU9pWTB1ZzB3aFF4Zzg1MXp0ckQ5RVBKVk4KNFdRZFRaWVhMNXA2NHNEWUFnS0dIV1V0YmFWTk00NG5YSFBzYlF1cXVDdnRMNTJDWVdzMzg4Yndtd1VVMi93LwowMElPZ2VmWXExTWdNVEVRNHdKalRjd21qdEpYZDJjbEJuNE52QUNYSEl3emNYVmJyTmtaQzAwUjJPUmtRL1grCkozV25LMjQyNEJ0eUlVOTYwb3dhMnh0U3NrZUJvNzhtZllueGptaVFESGJBSFk0dkNvR3ZiaEVMS3NsdExMeWgKb3crbjVZL0N2OXFJQkJjdGZoTGtwNE51SlVaTDhpaEZyTndjM05uVUdHWUdZaXBrc2pBL09tcnM3d3UvZm9JRQpiK2hpeUI3NHhVZjNjQjAyQlVyQTR4c2o1TWlMRXFyU0ZWK1M1YUdrR1ZmWml2Q2tySHNJemkwUVBxdlpmeFJRCkh4WTg3aStQN0JORjljbWFYcDRFbWRCYmlIV1hPS251aHh6MFFLQXA1QU9Nb3JJazFsMTFUZUw5bm5qRmZBSWUKMGFiYTJaOVM4WlE5R3RYcDlkUzRsNFJMWVFCQXVzVENXclRxUG9peW43OGkyOFdvRXJ6anpORHF3MEpOaHM4eApoaW9Jayt2SkpuUUNmRXFDb2JsN3RLWTlqdTFVbko5Q2dhV3BpNnBaT3Q3RDAzWWNYSmRwbkVuQXJMaUZxWHpCClRXUS9aVWZmREJzcE5PckVHeGFLdXZ1OEJXRTUvYnRHOTRFTzZBWGYyTkcvMVJ5VVU0cXF3VmFveWNqTDZ4aEIKQWd0N0V4T0xOY0ZBUHhTbm9hSnhjS2E1OE94VHJsa1VGUDdNU0hIcFJHSnhSR3gxaUhQUVpGSDJORWlSNmVkQQpHc01NcG9BL3UzTTI0cC9Ybmc9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    server: https://aks-demo-cluster-b350a4a1.hcp.westeurope.azmk8s.io:443\n  name: aks-demo-cluster\ncontexts:\n- context:\n    cluster: aks-demo-cluster\n    user: clusterUser_aks-demo-group_aks-demo-cluster\n  name: aks-demo-cluster\ncurrent-context: aks-demo-cluster\nkind: Config\npreferences: {}\nusers:\n- name: clusterUser_aks-demo-group_aks-demo-cluster\n  user:\n    client-certificate-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZIVENDQXdXZ0F3SUJBZ0lRUXNOV1NRNzIvUVROUlFMOGo5Q1ZYVEFOQmdrcWhraUc5dzBCQVFzRkFEQU4KTVFzd0NRWURWUVFERXdKallUQWVGdzB5TXpBeU1qY3hPVEU0TlRKYUZ3MHlOVEF5TWpjeE9USTROVEphTURBeApGekFWQmdOVkJBb1REbk41YzNSbGJUcHRZWE4wWlhKek1SVXdFd1lEVlFRREV3eHRZWE4wWlhKamJHbGxiblF3CmdnSWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUNEd0F3Z2dJS0FvSUNBUUMvY0FOWU9OUGdpK3p1SEwzVG1GVmsKc1l1WHdiNSt2OEpMQmF6Z3duMDJKU3pLbk9kckcyazRoMXNYbTYzTmFSNVVsSG5CeEtzRjVPUVlCcE5ITlQwTwozZWtKQWlZNW9uK3lyYUcza29VMzJEQjZ0cEpsS2FtUlRxem14S05RdGtwWEs0N3lraFA3bDRLUG9lWm4rMVlECi83VVFpbTU5QWM1VmNxME40aE9NeUdMREg5Ulc1K0c1MHVtdHhYZ0YwUk84a3JscG1hbVkwWEs4OEV5MllJajMKQ1BBSDFvZHp4azN6T3liU0ZGcm5Vd0MwUndGb0hwcENqYnN1UGZYZTlwOGowM3VhUXc5TkVpd3BvdlJ6L3BsdwpTRTFVeVp5TnIxMFA3aE5DSHplaENHalNOVXViY2VDaW5aenVnWUZ3dTVqenZGVXZEK2hZdVNnYTRSbVZlRHBhCk1ueG5WR3J6ZW1iS1BpSkRIYUZzTWhJQXFEMGo5SGZ6OEJ5WUxncWtDQ3RWaXNSVGM1ajUxdGRxVVpmeG0zUUUKMmlqMjJHR2NKQUJOWkkvbmVOejIzdVR4SEliVk4zM3NTL3c2ZFBMd0RDckVETCs0ZC9WZkYrT01hekxLYmFoMAptYmhzV1BIeWZnUDR5cEpmWjFHWVZyWC8wZFZ1bW8vUlNsZW0yK1NNMk83eHdXRnpaUi9FaGdYczIzV25pZkVBCmQrdW9KVmdsWVZ6MVdQQitIbCthYVl4c1NjRGpleHQ2bC9ZRWNIbnN5VGNGak1hVlQrSExDVlN2eVRSa1YwdXoKS09DcEhNVEhRN00ydUt1eEljZXpoeStudndVdm1MS1ZWM2FnZTdrUittZlc0UDhZNDQvODB2ZmlNSWc5a0FodApkTG5VWWVUaldaNjE0Q3JFWUJHTWd3SURBUUFCbzFZd1ZEQU9CZ05WSFE4QkFmOEVCQU1DQmFBd0V3WURWUjBsCkJBd3dDZ1lJS3dZQkJRVUhBd0l3REFZRFZSMFRBUUgvQkFJd0FEQWZCZ05WSFNNRUdEQVdnQlMzblppN0dJQkUKaVZQeG1jbi8wbmxLUlhJYUpEQU5CZ2txaGtpRzl3MEJBUXNGQUFPQ0FnRUFtNW92YlE0TVBmWkwyTXlSbjZBUQpsYThoNmRyOHYzSkRjL1ZJSUYyYXZxdDdLaHp3ZE1FQ2hROStOeTdNamVFTnBVVGNPMWxTOGNlZ2g4a3hOSkJSCkk4b1Q0aVFCNDBIcGpYRVYvR3Z0dWl3TUdoUkJnVVNlMmRuYlhxbGZZVW1qUWRtT09OdHlJaGJaN3NGYTYrTFEKWm1PYjZWVGl5c2VEdUZ1b1BNekNXUjJ2MVUzRmwxWnM3TUU1QURTVlEwRlBoUkg0cW9nQmVXTE15MExuelNicwo2VlRmclZWRlNMeVl0Z0d4aUlMS1psZUtLRlc1VmczUklyNHUwN3lOaG50Y3FNUzRtWllRMmhZazg3ckJybnlyCmpzMi9lOU9YV0JBVER6dzNOc0RYTm43Nm8xWUYyYllFNGZLRGt6dEJWcXpHaEY2dHJONFA2dlNsbEVyT2pXMkgKck9JYlgyeGZMU3FaWXdYU0FjaXgrNzd5MXYvN2RTU1NJamwveTI2bmJHa1kwdUpweDRqM25JTko0anErcXhHSApjemMyT20wa3B1eUFQbXZydnpobm5wYWtYc2dVZFlMZ0gvQkh3TzltVnVqZlNYNXd6aU5HUy9jTTU1a3poa0pYClZxa1ZZT1g2S21vK2hDK0hhZTdWV1Z3c2h3V1hURWU4OWRIaUVrZmJaZGFnbDBGZDl0d1M2NTRjVlBReWdDZnoKV0JBcTdmWHlhTU5iUTc1a0wybmlHQTN0bVFnTndCcjkzelVxWFlzbGUxaDBDdmlpSFZYcVJxZ25PZENESWFMbQpyblh4cGZnNTB5bkx0SmhKaEw4R2tBdS81YnhCMTFoQWlFTHc2Q1JCMUR2aDBWRjJoZnc0ZmhnMzVKTnlpTHlGCnZDYk9hZ0xwYTFHTEk4akZBRElLTDhzPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==\n    client-key-data: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlKS1FJQkFBS0NBZ0VBdjNBRFdEalQ0SXZzN2h5OTA1aFZaTEdMbDhHK2ZyL0NTd1dzNE1KOU5pVXN5cHpuCmF4dHBPSWRiRjV1dHpXa2VWSlI1d2NTckJlVGtHQWFUUnpVOUR0M3BDUUltT2FKL3NxMmh0NUtGTjlnd2VyYVMKWlNtcGtVNnM1c1NqVUxaS1Z5dU84cElUKzVlQ2o2SG1aL3RXQS8rMUVJcHVmUUhPVlhLdERlSVRqTWhpd3gvVQpWdWZodWRMcHJjVjRCZEVUdkpLNWFabXBtTkZ5dlBCTXRtQ0k5d2p3QjlhSGM4Wk44enNtMGhSYTUxTUF0RWNCCmFCNmFRbzI3TGozMTN2YWZJOU43bWtNUFRSSXNLYUwwYy82WmNFaE5WTW1jamE5ZEQrNFRRaDgzb1FobzBqVkwKbTNIZ29wMmM3b0dCY0x1WTg3eFZMdy9vV0xrb0d1RVpsWGc2V2pKOFoxUnE4M3BteWo0aVF4MmhiRElTQUtnOQpJL1IzOC9BY21DNEtwQWdyVllyRVUzT1krZGJYYWxHWDhadDBCTm9vOXRoaG5DUUFUV1NQNTNqYzl0N2s4UnlHCjFUZDk3RXY4T25UeThBd3F4QXkvdUhmMVh4ZmpqR3N5eW0yb2RKbTRiRmp4OG40RCtNcVNYMmRSbUZhMS85SFYKYnBxUDBVcFhwdHZrak5qdThjRmhjMlVmeElZRjdOdDFwNG54QUhmcnFDVllKV0ZjOVZqd2ZoNWZtbW1NYkVuQQo0M3NiZXBmMkJIQjU3TWszQll6R2xVL2h5d2xVcjhrMFpGZExzeWpncVJ6RXgwT3pOcmlyc1NISHM0Y3ZwNzhGCkw1aXlsVmQyb0h1NUVmcG4xdUQvR09PUC9OTDM0akNJUFpBSWJYUzUxR0hrNDFtZXRlQXF4R0FSaklNQ0F3RUEKQVFLQ0FnQk5TUkZ3bW5DZlpKNGdleVgvdUs0dzJxUzZmWk5FWkhJeUMzYUJ2c01DQ3Z3TVNFLzlJN0hWQ29BeQpCYjJqQWQ4bTBsSmRjZUtCbktpaE1uWmU5eFZSWFRGcFc1N0hBZDEvNnkwd2lVeVRBUXFCWUJlMkU1M0xkZkhECnNIc21hSkdXbzVVd1JOMGdZMGhvYURvMm5IZGJZZTVkWVNXOS9lNm8vSVQwNStKd29hMk5qTm9TdzhhVFdKelMKZExoQjBPaWc1ck5IK0t0SmNMVmJwYit5bVVKeVNQOXVpcU5na0J5RUo4dENZTWxhUGw0NGFib2RxTTBxTlVIdQpKMEdONUE3WFRkZkdyWEFOODFvMDdQNjNuWCtnbnUvcFhRT0JCOTBRUTFNdkRKOU91YkJudlBCckx3dzdXbG95Cng4SFVHMGhpamhQdHpnUkZYV3JkZnlidSt2ekRIVVE2M0wvWDFJV01PUVVLOGU2OE8rVXAvQnR2YUdqazdyaVkKaDRiN0hFZkRlT0hOZjdkMDhjeExNVVFrZkkzMWVmWXVwQmk2U3NsVFhaL1oxQ1dYQ203NHcrenFTZFI2OHA3cAp0TC9MNjVMQ1d2Q0dJR3hLWmpQV2s4ZjU5dUl0NmlJSzREclFsUktwZkZqRnF4Y3FFdkxIL1JCbk50YkZNWThUCjFSNDBKQUE5Vi9JRUJ5Qi82UjZvVy9ydzI5V25wYnRaUU9OVXNzVWlSMCs2VGo5WC9YVElsQTNzV0xRakp2UVMKa2VhS3hjVTNVRy9nN3FNYWI1K2lPWUY0M3RycGVyTmx6bjQzQTd5V2dKSzhtNkdvS1ZTR0M0TDlhY01uelp5cQpVdG5LMUZBODBSdmRjaG44UzVGRlNyVVdZYUI0T2tQVHVtSUNLOEtzRWQxdktnRHdRUUtDQVFFQStSdUpPUUJ0CjNpS05PNlQ4d3AvZUY2NG40VGVhZDArdmQwWXRJWlFwM3gzWUxkZXRmam9iSzBoZnhiUmdVVDBiYmFaWnN0bEwKbXBJWTB5bnlmeWI4UkRzUDc0U2VlVWgyeitCRzhJTkQ2NldFQnYrclRLY25zU1l0eElScjBBYStQYWxyUk9odQpvL29RNzFTWVJzaWJJWGxNYmtQQTQ4OXVGWXlBU1pzakFhMFpkR0NuSnJlQTd0V21nN2RjSHBGNE82cnZWTXd0CjJsWTFHV3d1cm02S2tFVWhKRlpLdG1pdXYzRFM3OFoxVnVZTmFsVHN6ZFJWN3AzV0hkRzdlUlVCeW1ydkxhMXoKOEtuQ01ENjFBWndvNFRyWVd4SlZ2anhNMDh6ZVJTZmtpNktGOGxtZTRmK3lkZ3BDVE9oWGtWVkoyRlZxS1I5awpUbXgxWEtveURXN3YwUUtDQVFFQXhMditBaFFJNkFPWTdHcWUwaDRBQk5HcTB5a2NFOU1XdjVKVDV6ZE8xdlNiCkxXS05oYlFnTTRkOEMvdUI5UEtqd204UUprRXN6S2s1eUoyUEVpTlNoSGVtcXZOb2JpVUFzRFJlbklPaTllYnYKMEUvNkhrSTE2QkFnMDdUZnh6ZHROVXhSc1pTQ0sxSnQ3c093aHFUL3FoeUhsQzBSWEpmbmJtdGk2RVBLRXRFMAo1VVF1QS9YNzI4aXNHeEJsQTR3OUxWZXpyeWp1S1E2MnJ5ZTNxZzZ2eDlEbXRFT0Z1SEc4K1N4enpRME9vdDUrCnZ4VU1aU1FsY21VWGkxZWxJVW1zWVV2SmIzelVGdGFueUpvM2tkWjVpRFRlajhVRWt2UDVsMzVwZmRaWHNmZkwKQnRRK1hZYnduWXY5QWloUXYvUkhCRlFHT3gyVUhxTGw5cElUSEtuQUV3S0NBUUVBcnNDQmNFcDd5S1JtZlp3TgpjUjhqZDJ0R01MbUlGQUVEcitHOEVWMVdUbDRxWkdaMElDUDFJVlVCVXJscUJET2hCVGY0bnYzUEN0MUlxd0kzClNybjNxSW5pY1AyUkNyWXFHMFJUbjdBR09zNS9JMFhDVHVESWVINjNCckI2elpHZGJiWm5PUXp4YVBrcFhpdnoKTTF6UmJ4Y2Y1ZzZEeDR5aHhsNHROUFd2QmlML3cyTjJmek9tTUdZVERUM1pVdHhzQXplejg4SFV2T0ZUR01XSwpyZldBSVJ0TjE2YnRmSzlOUDZHUGFJUEpseStGNDcwMTdtTHg4WllxT2ZzQzBEdExhVXZCQkVNMUhYU0pkTHpZCjBBdFRwa1ZZdC9MUjBjV05nOXVwWmN4SmlTZDNYZjgrOVg0aUhLcXZ2aklVRkRGSHY0cVVFY3NpMjkwOEs4aDkKbW16anNRS0NBUUFDTFNZNU5hbUhqNHFnaXVsbzM2WVdaNDloT0tJejRmRHRlNXZzQWVPZ1l5SllWUy9GbStHRApVR3RoNG8xa2ZVNnNkdmdSeEVUUG1zdWwyWUJjcmdGYXI4d3JOZmdneDg0REpRRXE4QlhjYklxWW5sbmcvZENFCjJiRFRScnYzQXpqMUR2d1VYOVUwejN1aDJZNVpYdmZwRk5tM0hPeUZQclR6dHNKb1dWK2g1NmlUSkxieG1rWUgKLzJkUUFWVnN2Wjlyb2YyOTRWRUpLVDJDSUlsYW0wRDhqK1lOZG5YRFBaYmVsc3hOSjJqVENtMFNoaFFXQmxsWApzNkNZRFFjcG9Cd0ZFNGFOOGk2U2RodHpENm12dGxTdjJnM2dQMGkycTNaR1k4S2Mvc01IbC9zcC95MFZjY20xCnBIZlBEMDBkWW9GcW5kZFh6aEwyWjh6dGRsNDV3Zkw3QW9JQkFRRHFtSnBNRXFsdWh6T2YxcXlsTmxiSTZrMmYKQlI3VG1PdmZGSVFXbjQyU3NwUW1ScmhPK1k3UFQvcUxYR3I0dmliVm9HYk1nc1ZEcnhFNEdWMFgwRmVVV2hLTQovaXRLZUFmbGpVditPT1dHZVNHdVZMcGZtQVlsZWF1cks0YU5JVjAyN2l5MUJIaFlMdnhzME5wSldkeG94SkkvCmhvdC8xdUZ4ZXpESHc2eUJiY2ppZ3ZhWkpDWjRhd2w0K3FDR012UVpNUTNxYUFjOXZRV1dvYjNSY1hudkdWemIKSVQ5Qi83T2NrM0RmWGpsNUNYcUdYMzFXMXkvZFhCcTJ3OVlZb3hJMjd3cDU2ek5FQ0ZGRWZQU2Z0Z290SjV2VAp2Zy9RS1d6OVlMa1VERFhNdWg0OXlBYmFmcEVVNnhUYzN0S2U2aW5Gd2JYNTYxZGNLVHFrWXZrWU5HUlIKLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0K\n    token: 5956e55e369994dd6b46453d6f4a085c5fad390229b919d5739b0e6c9715adbf6fe916189737c29a4778a527fde696f70026823180dccbf1dfe40e5475dda099\n",
+              "kubelet_identity": [
+                {
+                  "client_id": "dc53b929-f353-427c-a8e5-297e3bf7642a",
+                  "object_id": "97839b31-37d8-49d2-8449-a744edd9d86a",
+                  "user_assigned_identity_id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.ManagedIdentity/userAssignedIdentities/aks-demo-cluster-agentpool"
+                }
+              ],
+              "kubernetes_version": "1.24.9",
+              "linux_profile": [],
+              "local_account_disabled": false,
+              "location": "westeurope",
+              "maintenance_window": [],
+              "name": "aks-demo-cluster",
+              "network_profile": [
+                {
+                  "dns_service_ip": "10.0.0.10",
+                  "docker_bridge_cidr": "172.17.0.1/16",
+                  "load_balancer_profile": [
+                    {
+                      "effective_outbound_ips": [
+                        "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/MC_aks-demo-group_aks-demo-cluster_westeurope/providers/Microsoft.Network/publicIPAddresses/892bc0b2-31ce-4f98-a1b4-5e517f753488"
+                      ],
+                      "idle_timeout_in_minutes": 0,
+                      "managed_outbound_ip_count": 1,
+                      "outbound_ip_address_ids": [],
+                      "outbound_ip_prefix_ids": [],
+                      "outbound_ports_allocated": 0
+                    }
+                  ],
+                  "load_balancer_sku": "standard",
+                  "nat_gateway_profile": [],
+                  "network_mode": "",
+                  "network_plugin": "kubenet",
+                  "network_policy": "",
+                  "outbound_type": "loadBalancer",
+                  "pod_cidr": "10.244.0.0/16",
+                  "service_cidr": "10.0.0.0/16"
+                }
+              ],
+              "node_resource_group": "MC_aks-demo-group_aks-demo-cluster_westeurope",
+              "oms_agent": [],
+              "open_service_mesh_enabled": false,
+              "portal_fqdn": "aks-demo-cluster-b350a4a1.portal.hcp.westeurope.azmk8s.io",
+              "private_cluster_enabled": false,
+              "private_cluster_public_fqdn_enabled": false,
+              "private_dns_zone_id": "",
+              "private_fqdn": "",
+              "public_network_access_enabled": true,
+              "resource_group_name": "aks-demo-group",
+              "role_based_access_control_enabled": true,
+              "service_principal": [],
+              "sku_tier": "Free",
+              "tags": {},
+              "timeouts": null,
+              "windows_profile": []
+            },
+            "sensitive_values": {
+              "aci_connector_linux": [],
+              "api_server_authorized_ip_ranges": [],
+              "auto_scaler_profile": [],
+              "azure_active_directory_role_based_access_control": [],
+              "default_node_pool": [
+                {
+                  "kubelet_config": [],
+                  "linux_os_config": [],
+                  "node_labels": {},
+                  "node_taints": [],
+                  "tags": {},
+                  "upgrade_settings": [],
+                  "zones": []
+                }
+              ],
+              "http_proxy_config": [],
+              "identity": [{ "identity_ids": [] }],
+              "ingress_application_gateway": [],
+              "key_vault_secrets_provider": [],
+              "kube_admin_config": [],
+              "kube_config": [{}],
+              "kubelet_identity": [{}],
+              "linux_profile": [],
+              "maintenance_window": [],
+              "network_profile": [
+                {
+                  "load_balancer_profile": [
+                    {
+                      "effective_outbound_ips": [false],
+                      "outbound_ip_address_ids": [],
+                      "outbound_ip_prefix_ids": []
+                    }
+                  ],
+                  "nat_gateway_profile": []
+                }
+              ],
+              "oms_agent": [],
+              "service_principal": [],
+              "tags": {},
+              "windows_profile": []
+            },
+            "depends_on": ["azurerm_resource_group.rg"]
+          },
+          {
+            "address": "azurerm_resource_group.rg",
+            "mode": "managed",
+            "type": "azurerm_resource_group",
+            "name": "rg",
+            "provider_name": "registry.terraform.io/hashicorp/azurerm",
+            "schema_version": 0,
+            "values": {
+              "id": "/subscriptions/0d20d589-24dd-474a-a46a-45ba7090bba8/resourceGroups/aks-demo-group",
+              "location": "westeurope",
+              "name": "aks-demo-group",
+              "tags": {},
+              "timeouts": null
+            },
+            "sensitive_values": { "tags": {} }
+          }
+        ]
+      }
+    }
+  },
+  "configuration": {
+    "provider_config": {
+      "azurerm": {
+        "name": "azurerm",
+        "full_name": "registry.terraform.io/hashicorp/azurerm",
+        "version_constraint": "3.0.0",
+        "expressions": { "features": [{}] }
+      }
+    },
+    "root_module": {
+      "outputs": {
+        "aks_fqdn": {
+          "expression": {
+            "references": [
+              "azurerm_kubernetes_cluster.aks.fqdn",
+              "azurerm_kubernetes_cluster.aks"
+            ]
+          }
+        },
+        "aks_id": {
+          "expression": {
+            "references": [
+              "azurerm_kubernetes_cluster.aks.id",
+              "azurerm_kubernetes_cluster.aks"
+            ]
+          }
+        },
+        "aks_nodes_rg": {
+          "expression": {
+            "references": [
+              "azurerm_kubernetes_cluster.aks.node_resource_group",
+              "azurerm_kubernetes_cluster.aks"
+            ]
+          }
+        }
+      },
+      "resources": [
+        {
+          "address": "azurerm_kubernetes_cluster.aks",
+          "mode": "managed",
+          "type": "azurerm_kubernetes_cluster",
+          "name": "aks",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "default_node_pool": [
+              {
+                "enable_auto_scaling": { "constant_value": false },
+                "name": { "constant_value": "default" },
+                "node_count": { "references": ["var.node_count"] },
+                "type": { "constant_value": "VirtualMachineScaleSets" },
+                "vm_size": { "references": ["var.node_vm_size"] }
+              }
+            ],
+            "dns_prefix": { "references": ["var.cluster_name"] },
+            "identity": [{ "type": { "constant_value": "SystemAssigned" } }],
+            "location": { "references": ["var.location"] },
+            "name": { "references": ["var.cluster_name"] },
+            "network_profile": [
+              {
+                "load_balancer_sku": { "constant_value": "standard" },
+                "network_plugin": { "constant_value": "kubenet" }
+              }
+            ],
+            "resource_group_name": {
+              "references": [
+                "azurerm_resource_group.rg.name",
+                "azurerm_resource_group.rg"
+              ]
+            }
+          },
+          "schema_version": 2
+        },
+        {
+          "address": "azurerm_resource_group.rg",
+          "mode": "managed",
+          "type": "azurerm_resource_group",
+          "name": "rg",
+          "provider_config_key": "azurerm",
+          "expressions": {
+            "location": { "references": ["var.location"] },
+            "name": { "references": ["var.resource_group_name"] }
+          },
+          "schema_version": 0
+        }
+      ],
+      "variables": {
+        "cluster_name": { "description": "The name of the AKS cluster" },
+        "location": { "description": "The location of the AKS cluster" },
+        "node_count": {
+          "description": "Select the number of nodes for the AKS cluster"
+        },
+        "node_vm_size": {
+          "description": "Select the VM size for the AKS nodes"
+        },
+        "resource_group_name": {
+          "description": "The name of the resource group in which the AKS cluster exists"
+        }
+      }
+    }
+  }
+}

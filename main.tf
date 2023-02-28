@@ -17,6 +17,11 @@ resource "azurerm_kubernetes_cluster" "aks" {
     enable_auto_scaling = false
   }
 
+  network_profile {
+    network_plugin    = "kubenet"
+    load_balancer_sku = "standard"
+  }
+
   identity {
     type = "SystemAssigned"
   }
